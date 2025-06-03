@@ -77,7 +77,7 @@ async function fetchCommits(githubElement) {
             commitElement.classList.add('github-commit-item');
 
             commitElement.innerHTML = `
-                <a href="${commitUrl}" target="_blank" rel="noopener noreferrer" class="commit-link">${commitSummary}</a>
+                <a href="${commitUrl}" target="_blank" rel="noopener noreferrer" class="github-commit-link">${commitSummary}</a>
                 ${commitDescription ? `<p class="github-commit-description">${commitDescription}</p> ` : ''}
                 <p class="github-commit-meta">(${commitAuthor} | ${commitDate})</p>
             `;
