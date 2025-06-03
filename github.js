@@ -62,7 +62,6 @@ async function fetchCommits(githubElement) {
             }
             const commitAuthor = commit.commit.author ? commit.commit.author.name : 'Unknown author';
             
-            // const commitDate = new Date(commit.commit.author.date).toLocaleDateString('de-DE'); // to be fixed
             const dateObj = new Date(commit.commit.author.date);
             const padToTwoDigits = (num) => String(num).padStart(2, '0');
             const year = dateObj.getFullYear();
@@ -78,9 +77,9 @@ async function fetchCommits(githubElement) {
             commitElement.classList.add('github-commit-item');
 
             commitElement.innerHTML = `
-                <p><a href="${commitUrl}" target="_blank" rel="noopener noreferrer" class="commit-link">${commitSummary}</a></p>
+                <a href="${commitUrl}" target="_blank" rel="noopener noreferrer" class="commit-link">${commitSummary}</a>
                 ${commitDescription ? `<p class="github-commit-description">${commitDescription}</p> ` : ''}
-                <p class="github-commit-meta">(${commitAuthor} - ${commitDate})</p>
+                <p class="github-commit-meta">(${commitAuthor} | ${commitDate})</p>
             `;
 
             commitsListContainer.appendChild(commitElement);
