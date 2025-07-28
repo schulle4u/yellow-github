@@ -21,7 +21,8 @@ class YellowGithub {
             $repoData = explode("/", $repo);
             $output = "<div class=\"github-repo-section\" data-github-owner=\"".htmlspecialchars($repoData[0])."\" data-github-repo=\"".htmlspecialchars($repoData[1])."\" data-number-of-commits=\"".htmlspecialchars($shortcutEntries)."\">\n";
             $output .= "<ul class=\"github-commits-list\">\n";
-            $output .= "</ul></div>\n";
+            $output .= "</ul>\n";
+            $output .= "<p><a href=\"https://github.com/".rawurlencode($repoData[0])."/".rawurlencode($repoData[1])."/commits\">".$this->yellow->language->getTextHtml("blogMore")."</a></p></div>\n";
         }
         return $output;
     }
