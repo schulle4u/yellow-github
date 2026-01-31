@@ -1,8 +1,6 @@
-<p align="right"><a href="readme-de.md">Deutsch</a> &nbsp; <a href="readme.md">English</a></p>
-
 # Github 0.9.0
 
-Display latest GitHub repository commits.
+Display latest GitHub repository commits. Developed by Steffen Schultz.
 
 <p align="center"><img src="screenshot.png" alt="Screenshot"></p>
 
@@ -37,6 +35,4 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 `GithubShortcutEntries` = Number of commits.  
 
-## Developer
-
-Steffen Schultz. [Get help](https://datenstrom.se/yellow/help/).
+Do you have questions? [Get help](https://datenstrom.se/yellow/help/).

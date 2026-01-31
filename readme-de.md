@@ -1,8 +1,6 @@
-<p align="right"><a href="readme-de.md">Deutsch</a> &nbsp; <a href="readme.md">English</a></p>
-
 # Github 0.9.0
 
-Neueste GitHub-Repository-Commits anzeigen.
+Neueste GitHub-Repository-Commits anzeigen. Entwickelt von Steffen Schultz.
 
 <p align="center"><img src="screenshot.png" alt="Bildschirmfoto"></p>
 
@@ -37,6 +35,4 @@ Die folgende Einstellung kann in der Datei `system/extensions/yellow-system.ini`
 
 `GithubShortcutEntries` = Anzahl der Commits.  
 
-## Entwickler
-
-Steffen Schultz. [Hilfe finden](https://datenstrom.se/de/yellow/help/).
+Hast du Fragen? [Hilfe finden](https://datenstrom.se/de/yellow/help/).
